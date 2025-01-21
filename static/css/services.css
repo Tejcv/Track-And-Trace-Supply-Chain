@@ -1,0 +1,46 @@
+.services-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.service-list li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.service-list li:before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+.service-list li:hover {
+    color: #FFD700;
+    transition: color 0.3s ease;
+}

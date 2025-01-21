@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - Online Track and Trace Supply{% endblock %}
+
+{% block content %}
+<div class="about-us-container">
+    <h2>About Us</h2>
+    <p>Welcome to our company, where we provide cutting-edge supply chain tracking solutions using RFID technology.</p>
+
+    <div class="image-text-container">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/Section-Image-scaled_dd.jpg') }}" alt="Section Image">
+        </div>
+        <div class="text-container">
+            <p>Our company specializes in creating efficient supply chain tracking systems to help businesses track products in real-time. With RFID and GPS technology, we provide a robust and reliable solution for monitoring goods as they move through the supply chain.</p>
+        </div>
+    </div>
+
+    <p>Our services are designed to enhance visibility, improve operational efficiency, and reduce costs for businesses worldwide.</p>
+</div>
+{% endblock %}

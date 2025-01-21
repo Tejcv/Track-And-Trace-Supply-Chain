@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - Online Track and Trace Supply{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We would love to hear from you! Feel free to reach out to us via phone, email, or visit us at our office.</p>
+    <ul>
+        <li><strong>Phone:</strong> +91 93804 32482</li>
+        <li><strong>Email:</strong> <a href="mailto:support@supplychaintracker.com">support@supplychaintracker.com</a></li>
+        <li><strong>Location:</strong> Bangalore, India</li>
+    </ul>
+</div>
+{% endblock %}

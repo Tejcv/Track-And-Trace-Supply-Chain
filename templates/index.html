@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Online Track and Trace Supply{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="content index-page">
+  <h2 class="center-heading">Welcome to Online Track And Trace Supply</h2>
+  <p class="center-heading">Track and trace systems use RFID tags to monitor product location and status in real-time throughout the supply chain.</p>
+  <div class="button-container">
+    <a href="/home" class="btn btn-primary">Search Product</a>
+    <a href="/about" class="btn btn-secondary">About Us</a>
+    <a href="/services" class="btn btn-secondary">Services</a>
+    <a href="/login" class="btn btn-secondary">Login</a>
+    <a href="/contact" class="btn btn-secondary">Contact Us</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="global-logistics">
+  <h2>Global Logistics Network</h2>
+  <div class="divider"></div>
+  <div class="image-text-container">
+    <div class="image-container">
+      <img src="static/images/ship.jpg" alt="Global Logistics Network Image">
+    </div>
+    <div class="text-container">
+      <p>Our comprehensive network ensures seamless movement of your goods across the globe. We partner with leading carriers and utilize RFID technology to track shipments in real-time, providing you with complete peace of mind. Get instant updates on your shipment's location and estimated arrival time, allowing you to plan and manage your deliveries efficiently.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="home-delivery">
+  <h2>Convenient Home Delivery</h2>
+  <div class="divider"></div>
+  <div class="image-text-container">
+    <div class="text-container">
+      <p>Enjoy the convenience of hassle-free home delivery. Our efficient logistics network ensures your packages arrive on time, right at your doorstep. We offer a variety of flexible delivery options to suit your needs, including same-day, next-day, and scheduled deliveries. Relax and let us take care of getting your packages to you quickly and securely.</p>
+    </div>
+   
+    <div class="image-container">
+        <img src="static/images/home-deliveryq.jpg" alt="Fast Home Delivery Image">
+    </div>
+  </div>
+</div>
+{% endblock %}

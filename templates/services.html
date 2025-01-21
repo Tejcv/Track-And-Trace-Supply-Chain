@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Services - Online Track and Trace Supply{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="services-container">
+    <h2>Our Services</h2>
+    <p>We offer the following services to streamline your supply chain and enhance traceability:</p>
+    <ul class="service-list">
+        <li>Real-time tracking of goods using RFID and GPS technologies.</li>
+        <li>Data analytics and reporting for supply chain optimization.</li>
+        <li>Customizable alerts for temperature, humidity, and location changes.</li>
+        <li>Integration with existing ERP and logistics systems.</li>
+        <li>Secure cloud storage for all tracking and monitoring data.</li>
+    </ul>
+</div>
+{% endblock %}

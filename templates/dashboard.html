@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard | Supply Chain Tracker{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="dashboard-container">
+    <h2>Welcome, {{ session['username'] }}</h2>
+    <p>Role: {{ user_role }}</p>
+    <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>RFID</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in database %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.rfid }}</td>
+                <td>{{ item.latitude }}</td>
+                <td>{{ item.longitude }}</td>
+                <td><a href="https://www.google.com/maps?q={{ item.latitude }},{{ item.longitude }}" target="_blank">View on Map</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/logout" class="btn btn-danger mt-3">Logout</a>
+</div>
+{% endblock %}

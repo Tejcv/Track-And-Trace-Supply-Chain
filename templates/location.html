@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}RFID Tag Details{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/location.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    {% if item %}
+        <h2>RFID Tag Details</h2>
+        <div class="details-container">
+            <p><strong>RFID:</strong> {{ item.rfid }}</p>
+            <p><strong>Latitude:</strong> {{ item.latitude }}</p>
+            <p><strong>Longitude:</strong> {{ item.longitude }}</p>
+            <p><strong>Temperature:</strong> {{ item.temperature }}°C</p>
+            <p><strong>Humidity:</strong> {{ item.humidity }}%</p>
+            <p><strong>Address:</strong> {{ item.address }}</p>
+            <p>
+                <strong>Google Maps Link:</strong>
+                <a href="https://www.google.com/maps?q={{ item.latitude }},{{ item.longitude }}" target="_blank">
+                    View Location on Google Maps
+                </a>
+            </p>
+        </div>
+    {% else %}
+        <p>Item not found.</p>
+    {% endif %}
+</div>
+{% endblock %}

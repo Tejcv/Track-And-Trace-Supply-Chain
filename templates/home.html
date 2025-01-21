@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Online Track and Trace Supply{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="content search-product">
+  <h2>Search your product</h2>
+  
+  <form action="/search" method="post">
+    <div class="form-group">
+      <input type="text" class="form-control" name="search_query" placeholder="Search by Product ID" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-wide">Search</button>
+  </form>
+</div>
+{% endblock %}

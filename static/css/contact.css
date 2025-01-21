@@ -1,0 +1,45 @@
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.contact-container h2 {
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+.contact-container ul li {
+    margin-bottom: 10px;
+}
+
+.contact-container ul li strong {
+    color: #FFD700;
+}
+
+.contact-container ul li a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.contact-container ul li a:hover {
+    text-decoration: underline;
+}
